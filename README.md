@@ -10,10 +10,11 @@ Please read the [blog post of this project on my website for more info](https://
 ## Requirements
 - Flask
 - Flask-RESTful
+- Requests
 
 
 ## Usage
-You can test the API by using a local host. To do this clone the Project
+You can test the API by using a local host. To do that clone the Project:
 ```
 clone https://github.com/tobiolabode/Flask_Carbon_API.git
 ```
@@ -25,7 +26,7 @@ This will run the server
 
 You can then use the request.py file to send info at the API
 
-format your request into a JSON or format:
+format your request into a JSON or a JSON format:
 ```json
 {  "km": 5000,  "tonnes": 100000}
 
