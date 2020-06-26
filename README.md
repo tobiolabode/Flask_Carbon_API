@@ -7,10 +7,15 @@ The company offsets carbon by working out the emissions generated when shipping 
 
 Please read the [blog post of this project on my website for more info](https://www.tobiolabode.com/blog/2020/6/25/python-api-for-carbon-emmissions).
 
+## Requirements
+- Flask
+- Flask-RESTful
+
+
 ## Usage
 You can test the API by using a local host. To do this clone the Project
 ```
-clone...
+clone https://github.com/tobiolabode/Flask_Carbon_API.git
 ```
 Then run flask_restful_ex.py
 ```
@@ -20,9 +25,15 @@ This will run the server
 
 You can then use the request.py file to send info at the API
 
-To caluate road freight using add '/road_freight' and the end of your local host address
+format your request into a JSON or format:
+```json
+{  "km": 5000,  "tonnes": 100000}
 
-To caluate boat freight using add '/boat_freight' and the end of your local host address
+```
+
+To caluate road freight use add '/road_freight' and the end of your local host address
+
+To caluate boat freight use add '/boat_freight' and the end of your local host address
 
 The road_freight only allows for miles and tonnes
-The boat_freight  allows for kilometere and tonnes
+The boat_freight allows for both miles and kilometeres
