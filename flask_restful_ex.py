@@ -17,7 +17,7 @@ empty_dict = {}
 # IDEA: USA and UK option
 
 
-class caluate_road_freight(Resource):
+class calculate_road_freight(Resource):
     def get(self):
         return {'Message': 'Sucesss', 'data': 'dummy_data' + ' C02'}
 
@@ -47,7 +47,7 @@ class caluate_road_freight(Resource):
         return calculations, 201
 
 
-class caluate_boat_freight(Resource):
+class calculate_boat_freight(Resource):
     def get(self):
         return {'Message': 'Sucesss', 'data': 'dummy_data' + ' C02'}
 
@@ -86,8 +86,8 @@ class caluate_boat_freight(Resource):
         return calculations, 201
 
 
-api.add_resource(caluate_road_freight, '/road_freight')
-api.add_resource(caluate_boat_freight, '/boat_freight')
+api.add_resource(calculate_road_freight, '/road_freight')
+api.add_resource(calculate_boat_freight, '/boat_freight')
 
 if __name__ == '__main__':
     app.run(debug=True)
